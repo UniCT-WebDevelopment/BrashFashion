@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+* {
+    font-family: 'Archivo Black', sans-serif;
+}
+
+/* Logout */
+.returnHome{
+    position: fixed;
+    top: 30%;
+    left: 0%;
+
+    width: 7%;
+    padding: 10px 10px;
+
+    color: white;
+    background-color: black;
+
+    z-index: 999;
+}
+
+.returnHome:hover{
+    width: 10%;
+}
+
+.returnHome > a {
+    text-decoration: none;
+    color: white;
+}
+
+.returnHome > a:visited {
+    color: white;
+}
+
+/* products section */
+.products {
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 5%;
+
+    width: 100%;
+    height: auto;
+    background-color: whitesmoke;
+    padding: 20px 20px;
+
+    border-radius: 10px 10px;
+}
+
+.products > .searchBar{
+    padding: 5px 5px;
+    margin: 10px 25px;
+    border-radius: 10px 10px;
+    background-color: white;
+}
+
+.products > .searchBar > img {
+    position: relative;
+    top: 2px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 15px;
+}
+
+.products > .searchBar > .searchProduct {
+    width: 80%;
+    border: none;
+    outline: none;
+}
+
+.products > .card{
+    position:relative;
+    display: inline-block;
+    margin: 10px 25px;
+    width: 20%;
+    height:auto;
+    padding: 20px 20px;
+    background-color: white;
+    border-radius: 10px 10px;
+}
+
+.products > .card:hover{
+    box-shadow: 5px 5px 18px #aaaaaa;
+    cursor: pointer;
+}
+
+.products > .card > .caption {
+    position:relative;
+    width:100%;
+    height: 35%;
+    text-align: center;
+
+    padding: 10px 10px;
+    border-radius: 10px 10px;
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+.products > .card > .caption > img {
+    width: 80%;
+    position: relative;
+    top: 30%;
+}
+
+.products > .card > .descriptionCard{
+    margin-top: 10px;
+    border-radius: 10px 10px;
+    border: 1px solid black;
+}
+
+.products > .card > .descriptionCard > ul{
+    padding: 5px 10px;
+    list-style-type: none;
+}
+
+.products > .card > .descriptionCard > ul > li > .title{
+    color: grey;
+}
+
+/* Basket section */
+.basket{
+    position: relative;
+    top: 70%;
+    margin-bottom: 5%;
+
+    width: 100%;
+    height: auto;
+    min-height: 100px;
+    background-color: whitesmoke;
+    padding: 20px 20px;
+
+    border-radius: 10px 10px;
+}
+
+.basket > .ordersTable{
+    position: relative;
+    top: 5px;
+
+    padding: 10px 10px;
+    border-radius: 10px 10px;
+    width: 100%;
+    background-color: white;
+}
+
+.basket > .counted {
+    display: inline-block;
+}
+
+.basket > .counted > .pay {
+    position: relative;
+    top: 10px;
+
+    background: none;
+    border: 2px solid black;
+    padding: 10px 10px;
+    min-width: 200px;
+    cursor: pointer;
+}
+
+.basket > .counted > .pay:hover{
+    background: black;
+    border: 2px solid white;
+    color: white;
+    box-shadow: 5px 5px 18px #aaaaaa;
+}
+
+.basket > .delete {
+    position: relative;
+    top: 10px;
+    left: 10px;
+
+    background: none;
+    border: 2px solid black;
+    padding: 10px 10px;
+    min-width: 200px;
+    cursor: pointer;
+}
+
+.basket > .delete:hover{
+    background: black;
+    border: 2px solid white;
+    color: white;
+    box-shadow: 5px 5px 18px #aaaaaa;
+}
+
+/* Order section */
+.orders {
+    position: relative;
+    top: 80%;
+    margin-bottom: 5%;
+
+    width: 100%;
+    height: auto;
+    min-height: 100px;
+    background-color: whitesmoke;
+    padding: 20px 20px;
+
+    border-radius: 10px 10px;
+}
+
+.orders > .ordersExecuted{
+    position: relative;
+    top: 5px;
+    padding: 10px 10px;
+    border-radius: 10px 10px;
+
+    width: 100%;
+    background-color: white;
+}
+
+.ordersExecuted .invoiceDownload{
+    text-decoration: none;
+    color: green;
+}
+
+.ordersExecuted .invoiceDownload:visited {
+    color: green;
+}
+
+.orders > .ordersExecuted > .invoiceDownload:hover{
+    cursor: pointer;   
+}
+
+.orders > .ordersExecuted .removeOrder, .acceptOrder{
+    width: 20px;
+}
+
+.orders > .ordersExecuted .removeOrder:hover{
+    cursor: pointer;
+}
+
+/* Invoice Div - for the new view */
+.invoice{
+    position: relative;
+    top: 100px;
+
+    padding: 10px 50px;
+
+    width: 100%;
+    height: auto;
+
+    border: 2px dashed black;
+    border-radius: 10px 10px;
+}
+
+.invoice > .buyedTable{
+    position: relative;
+    top: 5px;
+    padding: 10px 10px;
+    border-radius: 10px 10px;
+    margin-bottom: 20px;
+    color: white;
+
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}

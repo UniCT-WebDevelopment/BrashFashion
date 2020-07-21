@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+* {
+    font-family: 'Archivo Black', sans-serif;
+}
+
+/* Logout */
+.returnHome{
+    position: fixed;
+    top: 30%;
+    left: 0%;
+
+    width: 7%;
+    padding: 10px 10px;
+
+    color: white;
+    background-color: black;
+
+    z-index: 999;
+}
+
+.returnHome:hover{
+    width: 10%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+/* Manage section */
+.manage{
+    position: relative;
+    top: 10%;
+
+    width: 100%;
+    height:auto;
+    min-height: 100px;
+    background-color: whitesmoke;
+    padding: 20px 20px;
+
+    border-radius: 10px 10px;
+}
+
+.manage > .ordersTable{
+    position: relative;
+    top: 5px;
+
+    padding: 10px 10px;
+    width: 100%;
+    border-radius: 10px 10px;
+    background-color: white;
+}
+
+.manage > .ordersTable .SwitchOFF:hover{
+    cursor: pointer;
+}
+
+.manage > .ordersTable .SwitchON:hover{
+    cursor: pointer;
+}
+
+/* Assigment product and insert a form for products */
+.assignment{
+    position: relative;
+    top: 30px;
+
+    width: 100%;
+    height: 400px;
+    background-color: whitesmoke;
+    padding: 20px 20px;
+
+    border-radius: 10px 10px;
+}
+
+.insert-form > .input-form{
+    position: relative;
+    width: 50%;
+    padding: 10px 10px;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid black;
+    outline: none;
+    background: transparent;
+}
+
+.insert-form > .submit{
+    position: relative;
+    top: 77px;
+    left: -560px;
+
+    background: none;
+    border: 2px solid black;
+    padding: 10px 10px;
+    min-width: 200px;
+    cursor: pointer;
+}
+
+.insert-form > .submit:hover{
+    background: black;
+    border: 2px solid white;
+    color: white;
+    box-shadow: 5px 5px 18px #aaaaaa;
+}
+
+/* Remove item section
+.removeItem{
+    position: relative;
+    top: 60px;
+
+    width: 100%;
+
+    background-color: whitesmoke;
+    padding: 20px 20px;
+    border-radius: 10px 10px;
+}
+
+.removeItem > .remove-form{
+    position: relative;
+    top: 5px;
+}
+
+.removeItem > .remove-form > .remove-item{
+    background: none;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.removeItem > .remove-form > .remove-item:hover{
+    background: black;
+    border: 2px solid white;
+    color: white;
+    box-shadow: 5px 5px 18px #aaaaaa;
+}*/
+
+
+/* products section */
+.products {
+    position: relative;
+    top: 60px; /* 80px with removeItem */
+    margin-bottom: 5%;
+
+    width: 100%;
+    height: auto;
+    min-height: 100px;
+    background-color: whitesmoke;
+    padding: 20px 20px;
+
+    border-radius: 10px 10px;
+}
+
+.products > .card{
+    display: inline-block;
+    margin: 10px 25px;
+    width: 20%;
+    padding: 20px 20px;
+    background-color: white;
+    border-radius: 10px 10px;
+}
+
+.products > .card:hover{
+    box-shadow: 5px 5px 18px #aaaaaa;
+}
+
+.products > .card > .caption {
+    height: 35%;
+    text-align: center;
+
+    padding: 10px 10px;
+    border-radius: 10px 10px;
+    border: 1px solid black;
+    /*background-color: black;*/
+    overflow: hidden;
+}
+
+.products > .card > .caption > img {
+    width: 80%;
+    position: relative;
+    top: 30%;
+}
+
+.products > .card > .descriptionCard{
+    margin-top: 10px;
+    border-radius: 10px 10px;
+    border: 1px solid black;
+}
+
+.products > .card > .descriptionCard > ul{
+    padding: 5px 10px;
+    list-style-type: none;
+}
+
+.products > .card > .descriptionCard > ul > li > span{
+    color: grey;
+}

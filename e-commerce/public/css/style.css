@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+* {
+    font-family: 'Archivo Black', sans-serif;
+}
+
+/* navbar */
+.menu{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+
+    height: 65px;
+    color: black;
+
+    padding: 10px 10px;
+
+    z-index: 999;
+}
+
+.menu > .logoB {
+    transform: translateX(-50%);
+    left: 5%;
+    position: absolute;
+
+    padding-top: 15px;
+    width: 80px;
+
+    padding: 10px 10px;
+}
+
+.menu > ul {
+    display: inline;
+    position: absolute;
+    top: 0px;
+    right: 20px;
+
+    margin: 0px;
+    padding: 10px 10px;
+}
+
+.menu > ul > li {
+    display: inline-block;
+    padding: 10px 10px;
+}
+
+.menu > ul > li > a {
+    text-decoration: none;
+}
+
+.menu > ul > li > a:visited {
+    color: black;
+}
+
+.menu > ul > li:hover {
+    background: black;
+}
+
+.menu > ul > li > a:hover {
+    color: white;
+}
+
+/* log navbar */
+.navlogin {
+    display: none;
+    z-index: 999;
+
+    width: 20%;
+
+    position: absolute;
+    top: 7%;
+    left: 74.1em;
+
+    padding: 20px 35px;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.navlogin input {
+    padding: 12px 20px;
+    margin-bottom: 10px;
+}
+
+.navlogin .btn-login:hover {
+    background-color: black;
+    color: white;
+    border: 2px solid white
+}
+
+/* Texts and image with a little parallax */
+.first-section{
+    position: absolute;
+    top: 90px;
+    left: 0px;
+    font-size: 150px;
+}
+
+.second-section{
+    position: absolute;
+    top: 30%;
+    left: 0%;
+    bottom: 0%;
+    margin: 0px;
+}
+
+.second-section > .girlNeon{
+    position: relative;
+    width: 60%;
+}
+
+.third-section:before {
+    content: attr(data-content);
+    position: absolute;
+    top:0; left:0;
+    width:2.07em;
+    overflow:hidden;
+    color:white;
+    box-shadow: black;
+}
+
+.third-section{
+    position: absolute;
+    top: 200px;
+    left: 600px;
+    font-size: 150px;
+}
+
+/* About Section */
+.description-section{
+    position: absolute;
+    top: 1000px;
+    left: 18%;
+    right: 0px;
+
+    width: 1000px;
+    height: 400px;
+
+    opacity: 0;
+
+    background-color: whitesmoke;
+}
+
+.description-section > .logoAbout{
+    position: relative;
+    top: 130px;
+    left: -160px;
+    width: 500px;
+}
+
+.description-section > .aboutUs{
+    position: absolute;
+    top: 105px;
+    left: 450px;
+
+    font-size: 20px;
+    width: 500px;
+    height: 200px;
+}
+
+/* Type Section: Man - Woman - Baby */
+.type-section.male {
+    position: absolute;
+    top: 1800px;
+    left: 18%;
+    right: 0px;
+
+    opacity: 0;
+
+    width: 1000px;
+    height: 400px;
+
+    background-color: whitesmoke;
+
+}
+
+.type-section > .type-photo{
+    position: relative;
+    top: -6.2em;
+    left: -180px;
+    width: 550px;
+}
+
+.type-section > .title-type-man-section{
+    position: absolute;
+    top: 50px;
+    left: 30%;
+    font-size: 60px;
+}
+
+.type-section > .briefMan{
+    position: absolute;
+    top: 130px;
+    left: 30%;
+    width: 550px;
+    font-size: 30px;
+}
+
+.type-section > .btn{
+    position: absolute;
+    top: 230px;
+    left: 30%;
+
+    background: none;
+    border: 2px solid black;
+    padding: 12px 20px;
+    min-width: 200px;
+    cursor: pointer;
+}
+
+.type-section > .btn:hover{
+    background: black;
+    border: 2px solid white;
+    color: white;
+    box-shadow: 5px 5px 18px #aaaaaa;
+}
+
+.type-section > .subscribe {
+    left: 520px;
+}
+
+/* WOMAN */
+.type-section.female{
+    position: absolute;
+    top: 2800px;
+    left: 18%;
+    right: 0px;
+
+    opacity: 0;
+
+    width: 1000px;
+    height: 400px;
+
+    background-color: whitesmoke;
+
+}
+
+.type-section > .type-girl-photo{
+    position: relative;
+    top: -5.7em;
+    left: -160px;
+    width: 450px;
+}
+
+.type-section.female > .briefWoman{
+    position: absolute;
+    top: 130px;
+    left: 30%;
+    width: 600px;
+    font-size: 30px;
+}
+
+/* BABY */
+.type-section.baby{
+    position: absolute;
+    top: 3800px;
+    left: 18%;
+    right: 0px;
+
+    opacity: 0;
+
+    width: 1000px;
+    height: 400px;
+
+    background-color: whitesmoke;
+
+}
+
+.type-section > .type-baby-photo{
+    position: relative;
+    top: -4.8em;
+    left: -200px;
+    width: 480px;
+}
+
+.type-section.baby > .briefBaby{
+    position: absolute;
+    top: 130px;
+    left: 30%;
+    width: 600px;
+    font-size: 30px;
+}
+
+/* create a subscribe form */
+.subscribe-form{
+    position: absolute;
+    top: 4800px;
+    left:18%;
+
+    opacity: 0;
+
+    width: 1000px;
+    height: 450px;
+
+    background-color: whitesmoke;
+}
+
+.subscribe-form > .input-form{
+    position: relative;
+    left: 25%;
+    width: 50%;
+    padding: 10px 10px;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid black;
+    outline: none;
+    background: transparent;
+}
+
+.subscribe-form > .submit{
+    position: relative;
+    top: 70px;
+    left: -100px;
+
+    background: none;
+    border: 2px solid black;
+    padding: 10px 10px;
+    min-width: 200px;
+    cursor: pointer;
+}
+
+.subscribe-form > .submit:hover{
+    background: black;
+    border: 2px solid white;
+    color: white;
+    box-shadow: 5px 5px 18px #aaaaaa;
+}
+
+/* footer */
+.awards{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    top: 5700px;
+
+    height: 400px;
+    
+    background-color: whitesmoke;
+}
+
+footer .logoBFooter{
+    position: absolute;
+    transform: translateX(-50%);
+    top: 35px;
+
+    width: 50px;
+}
+
+footer .lineRight{
+    position: absolute;
+    transform: translateX(-50%);
+    top: 10%;
+    left: 30%;
+    border-top: 2px solid black;
+    width: 20%;
+    padding: 0px !important;
+}
+
+/* different sections in footer */
+footer .footer-navbar-shop{
+    position: relative;
+    top: 80px;
+    left: 70px;
+}
+
+footer .footer-navbar-shop > ul > li{
+    display: block;
+    padding: 5px 5px;
+}
+
+footer .footer-navbar-corporate{
+    position: absolute;
+    top: 80px;
+    left: 450px;
+}
+
+footer .footer-navbar-corporate > ul > li{
+    display: block;
+    padding: 5px 5px;
+}
+
+footer .footer-navbar-help{
+    position: absolute;
+    top: 80px;
+    left: 780px;
+}
+
+footer .footer-navbar-help > ul > li{
+    display: block;
+    padding: 5px 5px;
+}
